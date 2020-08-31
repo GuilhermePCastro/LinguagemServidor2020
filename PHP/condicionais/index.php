@@ -54,3 +54,4 @@ switch ($clima){
 $variavel = 'isso';
 $variavel = $variavel ?? 'nada';
 echo "<br><br> Olha só $variavel";
+
