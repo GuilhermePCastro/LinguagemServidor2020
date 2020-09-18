@@ -1,5 +1,6 @@
 <?php
 
+// conectando no banco
 $db = mysqli_connect('localhost', 'root', '', 'aulaphp');
 
 $retorno = mysqli_query($db, 'SELECT * FROM TB_CONTATO');
