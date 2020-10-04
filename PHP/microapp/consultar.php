@@ -9,10 +9,6 @@ foreach( $consulta as $dado){
 
     echo "ID: {$dado['PK_ID']} | Nome: {$dado['DS_NOME']} |  Celular: {$dado['DS_CELULAR']} | E-mail: {$dado['DS_EMAIL']} | <a href='apagar.php?id={$dado['PK_ID']}'>Apagar</a>  <a href='editar.php?id={$dado['PK_ID']}'>Editar</a> <br>";
     
-    $cursor[$dado['PK_ID']] = [ 'DS_NOME' => $dado['DS_NOME'],
-                                'DS_CELULAR' => $dado['DS_CELULAR'],
-                                'DS_EMAIL' => $dado['DS_EMAIL']];
-   
                                 /*
                                     foreach($cursor as $id => $reg){
                                         <tr>
@@ -25,3 +21,4 @@ foreach( $consulta as $dado){
 
 }
 echo '<a href="index.html">Cadastrar contato</a>';
+echo '<br><a href="busca.html">Buscar contato</a>';
