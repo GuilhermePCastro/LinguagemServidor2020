@@ -1,5 +1,5 @@
 <?php 
-    session_start();
+   require_once 'veriflogin.php';
 ?>
 <!DOCTYPE html>
 <html lang="pt-br">
@@ -42,6 +42,7 @@
         </style>
     </head>
     <body>
+        <?php  include 'header.php'; ?>
         <h1>NPS</h1>
         <form action="npsexec.php" method='POST'>
             <fieldset>
