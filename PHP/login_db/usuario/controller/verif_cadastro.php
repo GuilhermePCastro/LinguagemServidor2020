@@ -18,7 +18,7 @@ if(! filter_var($email, FILTER_VALIDATE_EMAIL)){
 
     $erros[] = 'E-mail inválido!';
     
-}elseif(existe_email($email)){
+}elseif(existe_email($email) && !isset($_POST['Alterar'])){
 
     $erros[] = 'E-mail já existe!';
 }
